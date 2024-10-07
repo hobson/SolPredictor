@@ -1,2 +1,180 @@
-__pycache__
+# ~/bin/ to ignore
+# /usr/share/locale etc (probably spelling corrector dictionaries?)
+# share/ 
 
+# Temporary and binary files
+*.deb
+*~
+*.py[codz]
+*.so
+*.cfg
+!.isort.cfg
+*.orig
+*.log
+*.pot
+.pytest_cache/*
+__pycache__/*
+.DS_*
+.cache/*
+.*.swp
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.coverage*
+cache_dir/
+installers/
+!installers/*.sh
+# pypi package setup files
+# pyproject must not be in root dir for `pip install -e .` to work
+# pyproject.toml
+# !scripts/pyproject.toml
+# !setup.cfg
+
+# Internal working cache for poetry
+poetry.lock
+
+
+# Project files
+.ropeproject
+.project
+.pydevproject
+.settings
+.idea
+.vscode
+tags
+*.code-workspace
+*.sublime-workspace
+
+# Package files
+*.egg
+*.eggs/
+.installed.cfg
+*.egg-info
+
+# Unittest and coverage
+htmlcov/*
+.coverage
+.tox
+junit.xml
+coverage.xml
+.pytest_cache/
+pytest-results*
+
+# Build and docs folder/files
+apps/*
+build/*
+dist/*
+sdist/*
+docs/api/*
+docs/_rst/*
+docs/_build/*
+cover/*
+runs/*
+MANIFEST
+
+# Mac
+__MACOSX
+
+# KDE
+.directory
+
+# BigData and pickled models
+db.sqlite3
+*.bz2
+*.zip
+*.npy
+*.numpy
+*.memmap
+*.pkl
+*.joblib
+**/data/qa-models/*
+**/data/models/pulse/*
+**/data/predictions*
+**/data/squad/*
+**/data/testsets/accuracy_report*
+**/albert-large*
+**/data/corpora/wikipedia/wikipedia-titles*
+
+# Per-project virtualenvs
+.venv*/
+
+# docs html
+docs/**/*.html
+
+# secrets
+.bash_env
+**/envs/
+**/.envs/
+*secret*
+*private*
+.env
+*.env
+
+
+# big model files
+simple-transformers
+albert-large-*
+wikipedia/articles_with_keywords.pkl
+
+# big binary application files installed from elsewhere
+terraform
+
+# source https://github.com/github/gitignore/blob/main/Terraform.gitignore
+# Local .terraform directories
+**/.terraform/*
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files, which are likely to contain sensitive data, such as
+# password, private keys, and other secrets. These should not be part of version
+# control as they are data points which are potentially sensitive and subject
+# to change depending on the environment.
+#
+*.tfvars
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include override files you do wish to add to version control using negated pattern
+#
+# !example_override.tf
+
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+# example: *tfplan*
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# code and libraries from virtualenv or conda
+.venv
+venv
+
+# secrets, keys and passwords
+ssh-key.*
+*.pub
+*.env*
+*secret*
+*password*
+*credential*
+
+# ##########################################################
+# gitignore-big 5M
+# find . -size +5M | cat >> .gitignore
+./terraform
+./apps/src/drawio-desktop.deb
+./apps/terraform_1.0.11_linux_amd64.zip
+./apps/terraform
+./apps/sublime-text_build-3211_amd64.deb
+./geckodriver
+./bfg.jar
+./skypeforlinux-64.deb
+./kubectl.latest
